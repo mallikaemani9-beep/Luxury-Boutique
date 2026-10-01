@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aura Atelier Boutique - Quick Launch</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #251815 0%, #400B1A 50%, #68132C 100%);
+      color: #FCF9F5;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.96);
+      color: #251815;
+      border-radius: 20px;
+      padding: 40px 32px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 8px;
+      color: #68132C;
+      font-family: Georgia, serif;
+      letter-spacing: 1px;
+    }
+    p {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 28px;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      margin-bottom: 14px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    .btn-store {
+      background: #68132C;
+      color: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(104, 19, 44, 0.35);
+    }
+    .btn-store:hover {
+      background: #801B37;
+      transform: translateY(-2px);
+    }
+    .btn-admin {
+      background: #D4AF37;
+      color: #251815;
+      box-shadow: 0 4px 14px rgba(212, 175, 55, 0.35);
+    }
+    .btn-admin:hover {
+      background: #E5C158;
+      transform: translateY(-2px);
+    }
+    .btn-api {
+      background: #F4EBE1;
+      color: #68132C;
+      border: 1px solid #E2D1C3;
+    }
+    .btn-api:hover {
+      background: #EAD8C7;
+      transform: translateY(-2px);
+    }
+    .footer-note {
+      margin-top: 24px;
+      font-size: 12px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div style="font-size: 42px; margin-bottom: 12px;">👑</div>
+    <h1>AURA ATELIER</h1>
+    <p>Luxury Boutique Clothing E-Commerce Portal</p>
+    
+    <a href="http://localhost:5173" target="_blank" class="btn btn-store">
+      🛍️ Open Customer Storefront
+    </a>
+    
+    <a href="http://localhost:5173/admin" target="_blank" class="btn btn-admin">
+      🛡️ Open Boutique Admin Portal
+    </a>
+    
+    <a href="http://localhost:8000/docs" target="_blank" class="btn btn-api">
+      ⚙️ Open Backend API (Swagger Docs)
+    </a>
+    
+    <div class="footer-note">
+      Localhost: Port 5173 (Frontend) & Port 8000 (Backend)
+    </div>
+  </div>
+</body>
+</html>
